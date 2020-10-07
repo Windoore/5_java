@@ -9,8 +9,8 @@ public class Prog {
     public static void sumDij(int y){
         int sum = 0;
         while(y != 0){
-            sum += (y % 10);
-            y /= 10;
+            sum += (y % 10);//остаток деления
+            y /= 10;//деление без остатка
         }
         System.out.println(sum);
     }
